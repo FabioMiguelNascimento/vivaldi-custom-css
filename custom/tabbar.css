@@ -1,0 +1,148 @@
+
+#tabs-tabbar-container.left {
+    transition: all 250ms ease !important;
+    width: 36px !important;
+}
+
+#tabs-tabbar-container.left:hover {
+    width: 250px !important;
+}
+
+.tabbar-wrapper {
+    position: absolute !important;
+    z-index: 200 !important;
+    height: 100% !important;
+    transition: all 250ms ease !important;
+    width: 36px !important;
+}
+
+.tabbar-wrapper:hover {
+    width: 250px !important;
+}
+
+.button-toolbar.workspace-popup.workspace-anchor.tabbar-workspace-button {
+    transition: all 250ms ease !important;
+    width: 36px !important;
+    overflow: hidden;
+}
+
+.tabbar-wrapper:hover .button-toolbar.workspace-popup.workspace-anchor.tabbar-workspace-button {
+    width: 250px !important;
+}
+
+.button-toolbar.workspace-popup.workspace-anchor.tabbar-workspace-button:hover {
+    width: 250px !important;
+}
+
+.tabbar-wrapper:hover .button-toolbar.workspace-popup.workspace-anchor.tabbar-workspace-button[style] {
+    width: 250px !important;
+}
+
+.button-toolbar.workspace-popup.workspace-anchor.tabbar-workspace-button:hover[style] {
+    width: 250px !important;
+}
+
+.button-toolbar.workspace-popup.workspace-anchor.tabbar-workspace-button:hover ~ .separator.separator-wsbutton,
+.button-toolbar.workspace-popup.workspace-anchor.tabbar-workspace-button:hover ~ .resize,
+.button-toolbar.workspace-popup.workspace-anchor.tabbar-workspace-button:hover ~ .tab-strip {
+    width: 250px !important;
+}
+
+#tabs-tabbar-container.left:has(.button-toolbar.workspace-popup.workspace-anchor.tabbar-workspace-button:hover) {
+    width: 250px !important;
+}
+
+.tabbar-wrapper:has(.button-toolbar.workspace-popup.workspace-anchor.tabbar-workspace-button:hover) {
+    width: 250px !important;
+}
+
+.separator.separator-wsbutton {
+    transition: all 250ms ease !important;
+    width: 36px !important;
+}
+
+.tabbar-wrapper:hover .separator.separator-wsbutton {
+    width: 250px !important;
+}
+
+.resize {
+    transition: all 250ms ease !important;
+    width: 36px !important;
+}
+
+.tabbar-wrapper:hover .resize {
+    width: 250px !important;
+}
+
+.tab-strip {
+    transition: all 250ms ease !important;
+    width: 36px !important;
+}
+
+.tabbar-wrapper:hover .tab-strip {
+    width: 250px !important;
+}
+
+#webview-container {
+    margin-left: 36px;
+}
+
+@media all and (display-mode: fullscreen) {
+    #webview-container {
+        margin-left: 0 !important;
+    }
+}
+
+#webview-container ~ .StatusInfo {
+    left: 36px !important;
+}
+
+.newtab {
+    opacity: 0;
+    transition: opacity 200ms ease;
+}
+
+#tabs-tabbar-container.left:hover .newtab {
+    opacity: 1 !important;
+    transition: opacity 200ms ease 250ms;
+}
+
+.tab-strip .tab-position .tab-wrapper .tab .tab-header .title {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.tab-strip .tab-position .tab-wrapper .tab .tab-header .button-badge {
+  left: 8px !important;
+right: auto;
+    display: none;
+
+}
+
+.tabbar-wrapper:hover .tab-strip .tab-position .tab-wrapper .tab .tab-header .button-badge {
+  left: 9px !important;
+    right: auto;
+}
+
+.tabbar-wrapper:hover .tab-strip .tab-position .tab-wrapper .tab .tab-header .title {
+    opacity: 1 !important;
+    transition: opacity 200ms ease 50ms;
+}
+
+.tab-strip .tab-position .tab-wrapper .tab .tab-header .close {
+    opacity: 0;
+    transition: opacity 200ms ease;
+}
+
+.tabbar-wrapper:hover .tab-strip .tab-position .tab-wrapper .tab .tab-header .close {
+    opacity: 1 !important;
+    transition: opacity 200ms ease 50ms;
+}
+
+.tab-strip .tab-position .tab-wrapper .tab .tab-header {
+    justify-content: center;
+}
+
+.tabbar-wrapper:hover .tab-strip .tab-position .tab-wrapper .tab .tab-header {
+    justify-content: flex-start;
+}

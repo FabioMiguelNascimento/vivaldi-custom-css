@@ -1,0 +1,223 @@
+.modal-wrapper[aria-label="Quick Command Prompt"] {
+    background: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+#modal-bg .modal-wrapper {
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.quick-command-container {
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px !important;
+    padding: 20px !important;
+    max-width: 580px !important;
+    width: 90vw !important;
+    transform: scale(0.95) !important;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+    animation: quickCommandSlideIn 300ms cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
+}
+
+@keyframes quickCommandSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.qc-entry {
+    position: relative !important;
+    margin-bottom: 16px !important;
+}
+
+.quick-command-search {
+    background: rgba(40, 40, 40, 0.6) !important;
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    padding: 14px 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+    outline: none !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.quick-command-search:focus {
+    border-color: rgba(108, 158, 255, 0.6) !important;
+    background: rgba(50, 50, 50, 0.8) !important;
+    box-shadow: 
+        0 0 0 3px rgba(108, 158, 255, 0.2),
+        0 8px 25px rgba(108, 158, 255, 0.15) !important;
+    transform: translateY(-1px) !important;
+}
+
+.quick-command-search::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.quick-command-search-hint {
+    position: absolute !important;
+    background: transparent !important;
+    border: none !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+    font-size: 16px !important;
+    padding: 14px 20px !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+}
+
+.quick-commands {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+.ReactVirtualized__Grid.ReactVirtualized__List {
+    border-radius: 12px !important;
+    overflow: auto !important;
+}
+
+.ReactVirtualized__Grid.ReactVirtualized__List::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+.ReactVirtualized__Grid.ReactVirtualized__List::-webkit-scrollbar-track {
+    background: transparent !important;
+    border-radius: 4px !important;
+}
+
+.ReactVirtualized__Grid.ReactVirtualized__List::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 4px !important;
+    transition: background 200ms ease !important;
+}
+
+.ReactVirtualized__Grid.ReactVirtualized__List::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.quick-command {
+    background: transparent !important;
+    border-radius: 8px !important;
+    padding: 8px  !important;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer !important;
+    border: 1px solid transparent !important;
+    overflow: hidden !important;
+}
+
+.quick-command:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.quick-command:hover::before {
+    left: 100% !important;
+}
+
+.quick-command[data-selected=""] {
+    background: rgba(108, 158, 255, 0.15) !important;
+    border-color: rgba(108, 158, 255, 0.3) !important;
+    box-shadow: 0 0 0 1px rgba(108, 158, 255, 0.2) !important;
+    transform: translateX(4px) !important;
+}
+
+.quick-command[data-selected=""]::before {
+    background: linear-gradient(90deg, transparent, rgba(108, 158, 255, 0.2), transparent) !important;
+}
+
+.quick-command-title {
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    flex: 1 !important;
+    z-index: 1 !important;
+    position: relative !important;
+    transition: color 200ms ease !important;
+}
+
+.quick-command:hover .quick-command-title {
+    color: #ffffff !important;
+}
+
+.quick-command[data-selected=""] .quick-command-title {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+.quick-command-meta {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 6px !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    padding: 4px 8px !important;
+    z-index: 1 !important;
+    position: relative !important;
+    transition: all 200ms ease !important;
+    font-family: 'Consolas', 'Monaco', monospace !important;
+}
+
+.quick-command:hover .quick-command-meta {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.quick-command[data-selected=""] .quick-command-meta {
+    background: rgba(108, 158, 255, 0.3) !important;
+    color: #ffffff !important;
+    border-color: rgba(108, 158, 255, 0.4) !important;
+}
+
+@media (max-width: 768px) {
+    .quick-command-container {
+        padding: 16px !important;
+        max-width: 95vw !important;
+        border-radius: 12px !important;
+    }
+    
+    .quick-command-search {
+        font-size: 16px !important;
+        padding: 12px 16px !important;
+    }
+    
+    .quick-command {
+        padding: 10px 12px !important;
+        margin: 1px 4px !important;
+    }
+    
+    .quick-command-title {
+        font-size: 14px !important;
+    }
+    
+    .quick-command-meta {
+        font-size: 11px !important;
+        padding: 3px 6px !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .quick-command-container {
+        background: rgba(25, 25, 25, 0.9) !important;
+    }
+    
+    .quick-command-search {
+        background: rgba(35, 35, 35, 0.7) !important;
+    }
+    
+    .quick-commands {
+        background: rgba(15, 15, 15, 0.5) !important;
+    }
+}
