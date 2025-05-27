@@ -37,14 +37,14 @@ Before installing the mods, make sure:
 
 5. Link your CSS files by adding the following line(s) before the closing `</head>` tag:
    ```html
-<head>
-  <meta charset="UTF-8" />
-  <title>Vivaldi</title>
-  <link rel="stylesheet" href="custom/tabbar.css" />
-  <link rel="stylesheet" href="custom/quick.css" />
-  <link rel="stylesheet" href="style/common.css" />
-  <link rel="stylesheet" href="chrome://vivaldi-data/css-mods/css" />
-</head>
+   <head>
+     <meta charset="UTF-8" />
+     <title>Vivaldi</title>
+     <link rel="stylesheet" href="custom/tabbar.css" />
+     <link rel="stylesheet" href="custom/quick.css" />
+     <link rel="stylesheet" href="style/common.css" />
+     <link rel="stylesheet" href="chrome://vivaldi-data/css-mods/css" />
+   </head>
    ```
 
 6. Save the file and restart Vivaldi.
